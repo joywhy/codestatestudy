@@ -1,25 +1,22 @@
 import React from 'react';
-import {BrowserRouter,Route,Routes, link } from "react-router-dom";
+
 import './App.css';
-import Tweets from "./Tweets";
-import Select from "./Select";
-import Popup from "./Popup";
+import Search from "./Search";
+import Showme from "./Showme";
+
 function App() {
  
 
   return (
-  <BrowserRouter>
+  
   <div>
     <div className='App'>
       <main>
         
-        <Routes>
-          <Route path="/" element={<Tweets/>}/>
         
-
-        </Routes>
-        <Select/>
-        {/* <Popup/> */}
+       <Search/>
+        <Showme/>
+    
 
 
       </main>
@@ -27,7 +24,7 @@ function App() {
 
     </div>
   </div>
-  </BrowserRouter>
+ 
   );
 }
 
